@@ -23,7 +23,7 @@ function Welcome() {
                         <img className='logo' src={logo} alt="" />
                         <h1 className='pt-2 font-semibold'>Understanding the Self</h1>
 
-                        <button onClick={handleContinue}>
+                        <button className='welcome-button' onClick={handleContinue}>
                             Continue
                         </button>
                     </div>

@@ -21,7 +21,7 @@
         height: auto;
     }
 
-    button{
+    .welcome-button{
         margin-top: 60px;
         font-size: 17px;
         background-color: rgb(196, 0, 176);
@@ -29,7 +29,7 @@
         border-radius: 5px;
         color: rgb(71, 71, 71);
     }
-    button:hover{
+    .welcome-button:hover{
         background-color: rgb(141, 141, 141);
     }
 
