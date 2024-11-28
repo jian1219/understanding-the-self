@@ -1,5 +1,5 @@
 .home-background{
-    background-color: rgb(98, 98, 98);
+    background-color: rgb(203, 203, 203);
         width: 100%;
         height: 100vh; /* Full viewport height */
       
@@ -66,4 +66,22 @@
     justify-content: end;
     margin-right: 10px;
     margin-top: 10px;
+  }
+
+  .parent-content{
+    background-color: rgb(224, 224, 224);
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+
+  }
+
+  .child-content{
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .child-content li{
+    list-style-type: square;
+    margin-left: 20px;
   }
