@@ -2,10 +2,13 @@ import React, { useState } from 'react';
 import "../css/General.css"
 import "../css/Home.css"
 
+import Footer from './Footer';
+
 import logo_brain from "../images/logo brain.jpg"
 import right_arrow from "../icons/right-arrow.png"
 
 import utspic1 from "../images/uts 1.jpg"
+import tora1 from "../images/tora 1.jpg"
 
 function Home() {
 
@@ -40,7 +43,7 @@ function Home() {
             <ul>
               <li><a href="#option1">Home</a></li>
               <li><a href="#option2">About</a></li>
-              <li><a href="#option3">Members</a></li>
+              <li><a href="#option3">Legends</a></li>
               <li><a href="#option3">Drinks</a></li>
               <li><a href="#option3">Spots</a></li>
 
@@ -74,7 +77,21 @@ function Home() {
                 <li>Being able to free ourselves from assumptions and biases </li>
               </ul>
             </div>
+            <div className='child-content '>
+              <img src={tora1} alt="" />
+              <p className='mt-2'>Tora is a nature lover and a happy person. His bright smile and positive energy light up every 
+                room he enters. Whether he's tending to the trees in the college forestry program or simply enjoying a 
+                walk through the woods, Tora’s happiness radiates. His love for nature fills him with joy, and he 
+                finds beauty in the smallest details—like the rustling leaves, the soft glow of the morning sun, 
+                or the vibrant colors of a blooming flower. Tora’s infectious laughter and optimistic outlook 
+                make him someone everyone loves to be around, and his happiness grows even more when he’s 
+                surrounded by the natural world he cherishes.</p>
+            </div>
 
+          </div>
+
+          <div>
+            <Footer />
           </div>
           
       </div>

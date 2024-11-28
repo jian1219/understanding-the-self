@@ -16,3 +16,16 @@
         display: block;
     }
 }
+
+
+.footer-background{
+    background-color: rgb(59, 59, 59);
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+}
+
+.footer-background h1{
+    color: white;
+    font-size: 12px;
+}
