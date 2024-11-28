@@ -1,0 +1,11 @@
+@media (max-width: 480px) {
+    .lala{
+        background-color: pink;
+    }
+}
+
+@media (min-width: 480px) {
+    .lala{
+        background-color: yellow;
+    }
+}
