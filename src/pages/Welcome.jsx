@@ -8,7 +8,7 @@ function Welcome() {
 
     const navigate = useNavigate();
     const handleContinue = () => {
-        navigate('/home'); // Navigate to '/another-page'
+        navigate('/login'); // Navigate to '/another-page'
     };
 
 

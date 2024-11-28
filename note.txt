@@ -1,0 +1,11 @@
+
+
+ 
+       <div className='cellphone-screen-only'>
+          
+       </div>
+
+       <div className='not-cellphone-screen'>
+            <h1>gamita imong cp </h1>
+       </div>
+

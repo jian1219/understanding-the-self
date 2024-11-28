@@ -37,8 +37,8 @@ function Home() {
            {/* Sliding Menu */}
           <div className={`menu ${menuOpen ? 'menu-open' : ''}`}>
             <div className='back-button'>
-              <img className='icon-arrow' src={right_arrow} alt="" />
-              <button className='' onClick={closeMenu}>Back</button>
+             
+              <button className='' onClick={closeMenu}> <img className='icon-arrow' src={right_arrow} alt="" /></button>
             </div>
             <ul>
               <li><a href="#option1">Home</a></li>
