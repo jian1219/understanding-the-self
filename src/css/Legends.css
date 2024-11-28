@@ -1,0 +1,19 @@
+.container-center{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.legends-container{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.legend-img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}

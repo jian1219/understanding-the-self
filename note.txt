@@ -72,3 +72,32 @@ function About() {
 }
 
 export default About
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div>
+      <h1>Legends</h1>
+      <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
+        {legends.map((legend, index) => (
+          <div key={index} style={{ textAlign: "center" }}>
+            <img
+              src={legend.profile_pic}
+              alt={`Legend ${index + 1}`}
+              style={{ width: "150px", height: "150px", objectFit: "cover", borderRadius: "8px" }}
+            />
+          </div>
+        ))}
+      </div>
+    </div>
