@@ -41,8 +41,8 @@ function Home() {
               <button className='' onClick={closeMenu}> <img className='icon-arrow' src={right_arrow} alt="" /></button>
             </div>
             <ul>
-              <li><a href="#option1">Home</a></li>
-              <li><a href="#option2">About</a></li>
+              <li><a href="/home">Home</a></li>
+              <li><a href="/about">About</a></li>
               <li><a href="#option3">Legends</a></li>
               <li><a href="#option3">Drinks</a></li>
               <li><a href="#option3">Spots</a></li>

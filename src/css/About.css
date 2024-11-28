@@ -1,0 +1,15 @@
+.about-content{
+    
+    margin: 30px 20px 0px 20px;
+   
+}
+
+.about-content p{
+    font-size: 13px;
+    text-align: center;
+}
+
+.about-complete-team{
+    border-radius: 10px;
+    margin-top: 10px;
+}
