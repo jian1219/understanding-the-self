@@ -2,14 +2,14 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 import "../css/About.css"
-import Header from './Header';
+import Header from './components/Header';
 
 
 import alcohol_drinks from "../images/alcohol-drinks.jpg"
 import complete_team from "../images/complete team.jpg"
 import team3 from "../images/team 3.jpg"
 
-import Footer from './Footer'
+import Footer from './components/Footer'
 
 function About() {
 

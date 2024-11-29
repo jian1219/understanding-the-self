@@ -47,6 +47,15 @@
 
 
 
+.reminder{
+    border-top: 2px solid rgb(115, 115, 115);
+    margin-top: 40px;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(78, 78, 78);
+    padding-top: 5px;
+}
+
 
 
 

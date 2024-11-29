@@ -1,43 +1,24 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; // React Router for navigation
-import { supabase } from "../config/supabaseClient"; // Supabase client
 import "../css/General.css";
 import "../css/Login.css";
 
 import logo_brain from "../images/logo brain.jpg";
 
 function Login() {
-  const [username, setUsername] = useState(""); // Username state
   const [password, setPassword] = useState(""); // Password state
   const [error, setError] = useState(""); // Error message state
   const navigate = useNavigate(); // React Router navigation
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     setError(""); // Reset error message
 
-    try {
-      // Query the Supabase 'users' table for matching username and password
-      const { data, error } = await supabase
-        .from("users")
-        .select("*")
-        .eq("username", username)
-        .eq("password", password)
-        .single(); // Ensure it fetches only one row
-
-      if (error) {
-        throw new Error("Invalid username or password");
-      }
-
-      if (data) {
-        console.log("Login successful:", data);
-        navigate("/home"); // Redirect to the home page
-      } else {
-        setError("Invalid username or password.");
-      }
-    } catch (err) {
-      console.error("Login failed:", err.message);
-      setError("Invalid username or password.");
+    // Check if password matches "tanduay"
+    if (password.toLowerCase() === "tanduay") {
+      navigate("/home"); // Navigate to the desired route on success
+    } else {
+      setError("Incorrect password. Please try again."); // Show error message
     }
   };
 
@@ -60,20 +41,13 @@ function Login() {
               <form className="grid justify-center" onSubmit={handleSubmit}>
                 <input
                   type="text"
-                  placeholder="Username"
-                  className="login-input mb-4"
-                  value={username}
-                  onChange={(e) => setUsername(e.target.value)}
-                />
-                <input
-                  type="password"
-                  placeholder="Password"
+                  placeholder="Fav Drinks"
                   className="login-input mb-4"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                 />
                 <button type="submit" className="login-button">
-                  Login
+                  Enter
                 </button>
               </form>
               {error && <p className="error-message text-red-500 mt-2">{error}</p>} {/* Display errors */}

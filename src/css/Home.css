@@ -13,7 +13,8 @@
     align-items: center;
     padding: 10px 10px;
     justify-content: space-between;
-    border-bottom: 2px solid pink;
+    border-bottom: 3px solid rgb(161, 161, 161);
+    z-index: 99;
 }
 
 .header img{
@@ -85,3 +86,11 @@
     list-style-type: square;
     margin-left: 20px;
   }
+
+
+  
+
+
+
+
+  

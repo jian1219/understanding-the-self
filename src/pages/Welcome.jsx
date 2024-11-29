@@ -28,6 +28,12 @@ function Welcome() {
                         <button className='welcome-button' onClick={handleContinue}>
                             Continue
                         </button>
+
+                        <div className='reminder'>
+                            <h1>GAMITA IMONG CP FOR BEST EXPERIECE</h1>
+                            <p className='text-[8px]'>powered by</p>
+                            <h2 className='text-[11px]'>Tanduay SELECT</h2>
+                        </div>
                     </div>
                 
                 </div>

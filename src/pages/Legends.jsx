@@ -3,8 +3,8 @@ import { supabase } from "../config/supabaseClient";
 import "../css/Legends.css";
 import { useNavigate } from "react-router-dom";
 
-import Header from "./Header";
-import Footer from "./Footer";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function Legends() {
   const [legends, setLegends] = useState([]);

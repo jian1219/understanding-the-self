@@ -6,6 +6,8 @@ import Login from "./pages/Login";
 import About from "./pages/About";
 import Legends from "./pages/Legends";
 import LegendProfile from "./pages/LegendProfile";
+import LearningLegendLogin from "./pages/LessonPage/LearningLegendLogin";
+import LearningLegendSignUp from "./pages/LessonPage/LearningLegendSignUp";
 
 //import Welcome from "./pages/Welcome";
 
@@ -20,6 +22,8 @@ function App() {
           <Route path="/about" element={<About />} /> 
           <Route path="/legends" element={<Legends />} /> 
           <Route path="/legend/:id" element={<LegendProfile />} />
+          <Route path="/learningLogin" element={<LearningLegendLogin />} />
+          <Route path="/learningSignUp" element={<LearningLegendSignUp />} />
           
         </Routes>
       </BrowserRouter>

@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import "../css/General.css";
 import "../css/Home.css";
+import Warning from './components/Warning';
 
-import Footer from './Footer';
-import Header from './Header';
+import Footer from './components/Footer';
+import Header from './components/Header';
 
 import utspic1 from "../images/uts 1.jpg";
 import tora1 from "../images/tora 1.jpg";
@@ -16,11 +17,9 @@ function Home() {
   return (
     <div className='home-background'>
       <div className='cellphone-screen-only'>
-        <div>
+        <div className=''>
           <Header />
         </div>
-
-      
         {/* Content */}
         <div className='parent-content'>
           <div>
@@ -49,14 +48,24 @@ function Home() {
           </div>
           <div className='child-content '>
             <img src={tora1} alt="" />
-            <p className='mt-2'>Tora is a nature lover and a happy person. His bright smile and positive energy light up every 
-              room he enters. Whether he's tending to the trees in the college forestry program or simply enjoying a 
-              walk through the woods, Tora’s happiness radiates. His love for nature fills him with joy, and he 
-              finds beauty in the smallest details—like the rustling leaves, the soft glow of the morning sun, 
-              or the vibrant colors of a blooming flower. Tora’s infectious laughter and optimistic outlook 
-              make him someone everyone loves to be around, and his happiness grows even more when he’s 
-              surrounded by the natural world he cherishes.</p>
+            <p className='mt-2'>Life is the existence and experience of living beings, encompassing the physical, emotional, 
+              and spiritual aspects of their journey. It begins with the spark of creation, whether through biological 
+              processes or other means, and is characterized by growth, interaction, and change. Life is a continuous 
+              cycle, from birth to death, filled with moments that shape individual identity and purpose.  
+
+              At its core, life is a blend of challenges and opportunities, offering countless lessons and experiences. 
+              It is a journey of discovery—of oneself, others, and the world. Each moment carries the potential for 
+              growth, whether through success, failure, joy, or sorrow. Life’s meaning often varies for each individual, 
+              shaped by personal beliefs, relationships, and experiences.  
+
+              Ultimately, life is both fragile and resilient, constantly adapting and evolving. It is a celebration 
+              of existence and the connections we build with others and our surroundings. Through its uncertainties 
+              and certainties, life invites us to find purpose, cherish the present, and contribute to something 
+              greater than ourselves.  </p>
           </div>
+        </div>
+        <div className='mt-1'>
+          <Warning />
         </div>
 
         <div>

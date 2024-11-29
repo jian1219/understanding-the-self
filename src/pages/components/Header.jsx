@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
-import "../css/General.css";
-import "../css/Home.css";
+import "../../css/General.css";
+import "../../css/Home.css";
 
-import logo_brain from "../images/logo brain.jpg";
-import right_arrow from "../icons/right-arrow.png";
+import logo_brain from "../../images/logo brain.jpg";
+import right_arrow from "../../icons/right-arrow.png";
 
 function Header() {
 
@@ -50,6 +50,7 @@ function Header() {
                 <li><button onClick={() => handleNavigation('/legends')}>Legends</button></li>
                 <li><button onClick={() => handleNavigation('/drinks')}>Drinks</button></li>
                 <li><button onClick={() => handleNavigation('/spots')}>Spots</button></li>
+                <li><button onClick={() => handleNavigation('/learningLogin')}>Learning legend</button></li>
                 </ul>
             </div>
 
