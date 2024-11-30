@@ -51,6 +51,10 @@ function LearningLegendSignUp() {
         }
     };
 
+    const handleNavigation = (route) => {
+        navigate(route); // Navigate to the specified route
+    };
+
 
 
   return (
@@ -119,9 +123,13 @@ function LearningLegendSignUp() {
                 <button type="submit" className="signUp-button">
                   Sign Up
                 </button>
+                <div>
+                    <p className="text-[13px] text-center mt-2">Already have Account <button onClick={() => handleNavigation('/learningLogin')} className="no-account">click here</button></p>
+                </div>
               </form>
               {error && <p className="error-message text-red-500 mt-2">{error}</p>}
               {success && <p className="success-message text-green-500 mt-2">{success}</p>}
+
             </div>
 
             <div className="footer">

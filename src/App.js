@@ -8,6 +8,13 @@ import Legends from "./pages/Legends";
 import LegendProfile from "./pages/LegendProfile";
 import LearningLegendLogin from "./pages/LessonPage/LearningLegendLogin";
 import LearningLegendSignUp from "./pages/LessonPage/LearningLegendSignUp";
+import LearningHome from "./pages/LessonPage/LearningHome";
+import LearningActivities from "./pages/LessonPage/LearningActivities"
+import LearningBooks from "./pages/LessonPage/LearningBooks"
+import LearningProfile from "./pages/LessonPage/LearningProfile"
+import LearningStudents from "./pages/LessonPage/LearningStudents"
+import LearningRecord from "./pages/LessonPage/LearningRecord";
+import LearningStatistics from "./pages/LessonPage/LearningStatistics"
 
 //import Welcome from "./pages/Welcome";
 
@@ -24,6 +31,14 @@ function App() {
           <Route path="/legend/:id" element={<LegendProfile />} />
           <Route path="/learningLogin" element={<LearningLegendLogin />} />
           <Route path="/learningSignUp" element={<LearningLegendSignUp />} />
+
+          <Route path="/learningHome" element={<LearningHome />} />
+          <Route path="/learningStudents" element={<LearningStudents />} />
+          <Route path="/learningBooks" element={<LearningBooks />} />
+          <Route path="/learningActivities" element={<LearningActivities />} />
+          <Route path="/learningProfile" element={<LearningProfile />} />
+          <Route path="/learningRecords" element={<LearningRecord />} />
+          <Route path="/learningStatistics" element={<LearningStatistics />} />
           
         </Routes>
       </BrowserRouter>
