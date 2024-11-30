@@ -35,7 +35,7 @@ function LearningLegendLogin() {
 
         if (data) {
             console.log("Login successful:", data);
-            navigate("/home"); // Redirect to the home page
+            navigate("/learningHome"); // Redirect to the home page
         } else {
             setError("Invalid username or password.");
         }

@@ -42,7 +42,7 @@ function LearningActivities() {
               <button onClick={() => handleNavigation('/learningProfile')}>Profile</button>
               <button onClick={() => handleNavigation('/learningRecords')}>Records</button>
               <button onClick={() => handleNavigation('/learningStatistics')}>Statistics</button>
-              <button>Sign Out</button>
+              <button onClick={() => handleNavigation('/Home')}>Sign Out</button>
             </div>
           )}
         </div>
